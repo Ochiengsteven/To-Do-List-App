@@ -1,7 +1,7 @@
 body {
   background-color: #f6f6f6;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 2%;
 }
 
@@ -36,9 +36,58 @@ body {
 .list-container li {
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 5vh;
   width: 100%;
   padding-left: 2%;
   justify-content: space-between;
   border-bottom: 1px solid #f6f6f6;
+}
+
+.clear-task a {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d1d1d3;
+}
+
+.clear-task a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.add-task input {
+  width: 90%;
+  background-color: #d1d1d3;
+  height: 4vh;
+  border: none;
+}
+
+.task-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-title img {
+  height: 40%;
+  width: auto;
+  display: block;
+  margin-right: 5%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task img {
+  height: 40%;
+  width: auto;
+  display: block;
+  margin-right: 5%;
 }
