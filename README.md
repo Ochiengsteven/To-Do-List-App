@@ -59,14 +59,14 @@
 
 - **To do list app structure**
 
-![Screenshot](./assets/screenshot.jpg)
+<!--![Screenshot](./assets/screenshot.jpg) -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- You can find the website [here](https://ochiengsteven.github.io/awesome-books-es6/)
+- You can find the website ![here](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
