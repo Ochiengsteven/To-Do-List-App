@@ -11,12 +11,12 @@ const tasks = [
   {
     description: 'task 2',
     done: true,
-    id: 1,
+    id: 2,
   },
   {
     description: 'task 3',
     done: false,
-    id: 1,
+    id: 3,
   },
 ];
 
