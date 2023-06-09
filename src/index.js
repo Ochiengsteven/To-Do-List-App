@@ -39,6 +39,7 @@ todoContainer.appendChild(todoContent);
 
 document.addEventListener('DOMContentLoaded', () => {
   // Create the to do list functionality
+  const todoContent = document.querySelector('.task-content');
   const inputBox = document.getElementById('input-to-do');
   const inputListContainer = document.getElementById('list-container');
   const addButton = document.querySelector('.add-button');
@@ -58,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
       inputListContainer.appendChild(li);
       inputBox.value = ''; // Clear the input field after adding the task
       errorMessage.style.display = 'none'; // Hide the error message
+      const span = document.createElement('span');
+      span.innerHTML = '\u2716';
+      li.appendChild(span);
     }
   });
 });

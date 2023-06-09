@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    index:'./src/index.js',
-    todo:'./modules/todo.js',
-  }
+    index: './src/index.js',
+    todo: './modules/todo.js',
+  },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
