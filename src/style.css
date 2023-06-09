@@ -40,16 +40,16 @@ input {
   border: none;
   outline: none;
   background: transparent;
-  font-weight: 14px;
-}
-
-.task-content h2 img {
-  width: 20px;
-  margin-right: 10px;
+  font-weight: 14;
 }
 
 .task-input img {
   width: 15px;
+  margin-right: 10px;
+}
+
+.task-content h2 img {
+  width: 20px;
   margin-right: 10px;
 }
 
@@ -98,7 +98,8 @@ ul li.checked::before {
 
 ul li span {
   position: absolute;
-  right: 0px;
+  right: 0;
+
   /* top: 5px; */
   bottom: 3px;
   width: 30px;
