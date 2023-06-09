@@ -38,6 +38,11 @@ todoContent.innerHTML += '<ul id="list-container"><!-- <li class="checked">task1
 todoContainer.appendChild(todoContent);
 
 document.addEventListener('DOMContentLoaded', () => {
+  // save data to local storage
+  const savedata = () => {
+    // eslint-disable-next-line no-use-before-define
+    localStorage.setItem('data', inputListContainer.innerHTML);
+  };
   // Create the to do list functionality
   const todoContent = document.querySelector('.task-content');
   const inputBox = document.getElementById('input-to-do');
@@ -63,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       span.innerHTML = '\u2716';
       li.appendChild(span);
     }
+    savedata();
   });
 
   inputListContainer.addEventListener('click', (e) => {
