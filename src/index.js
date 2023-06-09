@@ -64,4 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
       li.appendChild(span);
     }
   });
+
+  inputListContainer.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+      e.target.classList.toggle('checked');
+    } else if (e.target.tagName === 'SPAN') {
+      const div = e.target.parentNode;
+      div.remove();
+    }
+  }, false);
 });
