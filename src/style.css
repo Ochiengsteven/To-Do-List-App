@@ -34,6 +34,18 @@ body {
   border-radius: 3px;
 }
 
+p {
+  font-size: 14px;
+  color: #d9d9d9;
+  text-align: center;
+}
+
+p:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 input {
   flex: 1;
   height: 25px;
