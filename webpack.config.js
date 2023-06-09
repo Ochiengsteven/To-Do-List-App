@@ -6,10 +6,10 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    todo: './modules/todo.js',
+    todo: './src/todo.js',
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'inline-source-map', // for debugging
