@@ -93,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
       checkbox.addEventListener('change', (e) => {
         updateTaskStatus(index, e.target.checked);
       });
-      // li.appendChild(checkbox);
       inputListContainer.appendChild(li);
     });
     saveData();
