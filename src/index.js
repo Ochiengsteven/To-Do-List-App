@@ -6,6 +6,10 @@ import reload from './assets/reload.png';
 import move from './assets/vertical-dots.png';
 import add from './assets/plus.png';
 
+// import status updates methods
+// eslint-disable-next-line no-unused-vars
+import { updateTaskStatus, clearCompletedTasks } from './modules/statusUpdate.js';
+
 // icons
 const reloadIcon = new Image();
 reloadIcon.src = reload;
@@ -83,6 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
         deleteTask(index);
       });
       li.appendChild(deleteButton);
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = task.completed;
+      checkbox.addEventListener('change', (e) => {
+        updateTaskStatus(index, e.target.checked);
+      });
+      // li.appendChild(checkbox);
       inputListContainer.appendChild(li);
     });
     saveData();
