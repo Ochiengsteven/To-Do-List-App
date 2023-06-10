@@ -35,7 +35,7 @@ addButton.classList.add('add-button');
 addButton.innerHTML = '';
 const clearAll = document.createElement('p');
 clearAll.classList.add('clear-all');
-clearAll.textContent = 'Clear All';
+clearAll.textContent = 'Clear All Completed';
 addButton.appendChild(addIcon);
 todoInput.appendChild(addButton);
 todoTitle.appendChild(reloadIcon);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const clearAllTasks = () => {
-    tasks = [];
+    tasks = tasks.filter((task) => !task.completed);
     renderTasks();
   };
 
