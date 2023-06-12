@@ -41,7 +41,7 @@ todoInput.appendChild(addButton);
 todoTitle.appendChild(reloadIcon);
 todoContent.appendChild(todoTitle);
 todoContent.appendChild(todoInput);
-todoContent.innerHTML += '<ul id="list-container"><!-- <li class="checked">task1</li> --></ul>';
+todoContent.innerHTML += '<ul id="list-container"></ul>';
 todoContent.appendChild(clearAll);
 todoContainer.appendChild(todoContent);
 

@@ -46,6 +46,20 @@ p:hover {
   text-decoration: underline;
 }
 
+.error-message {
+  color: #fd5b5b;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.error-message:hover {
+  text-decoration: none;
+  color: #fd5b5b;
+  cursor: unset;
+}
+
 input {
   flex: 1;
   height: 25px;
