@@ -127,10 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to edit a task description
   // eslint-disable-next-line no-unused-vars
-  const editTaskDescription = (index, newDescription) => {
+  /* const editTaskDescription = (index, newDescription) => {
     tasks[index].description = newDescription;
     renderTasks();
-  };
+  }; */
 
   addButton.addEventListener('click', addTask);
   inputBox.addEventListener('keydown', (event) => {
@@ -143,9 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.tagName === 'LI') {
       const index = Array.from(inputListContainer.children).indexOf(e.target);
       tasks[index].completed = !tasks[index].completed;
+      /* tasks.forEach((task, i) => {
+        task.index = i + 1;
+      }); */
       renderTasks();
     }
-  });
+  });// *required update for the task index after delete all completed tasks.
 
   const clearAllTasks = () => {
     tasks = tasks.filter((task) => !task.completed);
